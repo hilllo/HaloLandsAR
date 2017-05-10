@@ -1,0 +1,7 @@
+Assembly-CSharp.dll
+Assembly-UnityScript.dll
+Polenter.SharpSerializer.Portable.dll
+UnityEngine.UI.dll
+UnityEngine.HoloLens.dll
+UnityEngine.Networking.dll
+UnityEngine.VR.dll

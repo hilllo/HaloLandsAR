@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: 710c1e682d24978438bec75a10dd4da6
+timeCreated: 1490041414
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - clipSFXGhostDispel: {fileID: 8300000, guid: 80922712de07211458eeb6af646a53c5,
+      type: 3}
+  - clipSFXGhostSpawn: {fileID: 8300000, guid: 112c60bd670874e479699fa8937a46a4, type: 3}
+  - clipSFXSpellReview: {fileID: 8300000, guid: 7d2bbea9abd958e4398f0ffd1870a9d2,
+      type: 3}
+  - clipVO_hello: {fileID: 8300000, guid: a2900041f86c5ac4fbaca3d6e0706c5c, type: 3}
+  - clipVO_ghost_comming: {fileID: 8300000, guid: 355e0e7472b689e4f87737287c488307,
+      type: 3}
+  - clipVO_ghost_hint: {fileID: 8300000, guid: 10fb8e30cfc398e4489a3919699ff68f, type: 3}
+  - clipVO_ghost_found: {fileID: 8300000, guid: 40e60db91fa1fe24798d9b8e35f167ea,
+      type: 3}
+  - clipVO_spell_hint: {fileID: 8300000, guid: 40e60db91fa1fe24798d9b8e35f167ea, type: 3}
+  - clipVO_spell_found: {fileID: 8300000, guid: 917e2c70e4e0d224d96951c7c91bff97,
+      type: 3}
+  - clipVO_spell_face: {fileID: 8300000, guid: 6faac68f175837142a5f33dd03c4c2f6, type: 3}
+  - clipVO_won: {fileID: 8300000, guid: ae3ba72ea7a9ee643b20860d57c3cb8c, type: 3}
+  - clipVO_lost: {fileID: 8300000, guid: 0de094cf170295241a8cdf81a02d654a, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

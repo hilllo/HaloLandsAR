@@ -1,0 +1,561 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1341489106333714}
+  m_IsPrefabParent: 1
+--- !u!1 &1341489106333714
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4609251655214510}
+  - component: {fileID: 114879481113390908}
+  - component: {fileID: 114301514100259080}
+  - component: {fileID: 114765405382779896}
+  - component: {fileID: 114020378380233956}
+  - component: {fileID: 114317869239322190}
+  - component: {fileID: 114465832040753532}
+  - component: {fileID: 114168423943855434}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4609251655214510
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1341489106333714}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114020378380233956
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1341489106333714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0454635f236b75947981837d387e6e0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SetupObjectsInstances: []
+  GameObjectsInstances: []
+  RoomObjectSets:
+  - name: Agent
+    set:
+    - name: Agent
+      count: 1
+      SetupPrefab: {fileID: 1233833031222408, guid: 3a9b0c78341fd8c44a94f90c6ffd84f0,
+        type: 2}
+      GamePrefab: {fileID: 1115774464252364, guid: 20a23546cfbd76e408625b83fbc56050,
+        type: 2}
+  - name: Spell
+    set:
+    - name: Spell
+      count: 3
+      SetupPrefab: {fileID: 1869446327447892, guid: 96ab7755a63cba246954db601842b31b,
+        type: 2}
+      GamePrefab: {fileID: 1405522291179952, guid: 01cf5c985f255b144a4f05ecf93be155,
+        type: 2}
+  - name: GhostSpawn
+    set:
+    - name: GhostSpawn
+      count: 6
+      SetupPrefab: {fileID: 1563767185354134, guid: 9889ec5371915fc4f83a66df9cf8ee71,
+        type: 2}
+      GamePrefab: {fileID: 1563767185354134, guid: 3cde0525fb2604e47a91b84f5548bdfb,
+        type: 2}
+  - name: Bat
+    set:
+    - name: Bat
+      count: 3
+      SetupPrefab: {fileID: 1838944087781200, guid: f92bf11978311cc4798bec10b6248d6d,
+        type: 2}
+      GamePrefab: {fileID: 1426328290600560, guid: 762c9393857a7cb48b1c6e8519f57b2c,
+        type: 2}
+  - name: Clock
+    set:
+    - name: Clock
+      count: 1
+      SetupPrefab: {fileID: 1029136350133884, guid: a41ae70658cc0d74895f7e9c8801a271,
+        type: 2}
+      GamePrefab: {fileID: 1029136350133884, guid: 0f797cb192a06794c9274de55b752cbd,
+        type: 2}
+  - name: Paintings
+    set:
+    - name: Painting0
+      count: 1
+      SetupPrefab: {fileID: 1381010182854336, guid: d62a31566246a7849bf8859a1b85ef77,
+        type: 2}
+      GamePrefab: {fileID: 103664, guid: 2f1666ad9b7fdd7459a360619d6ccffd, type: 2}
+    - name: Painting1
+      count: 1
+      SetupPrefab: {fileID: 1747256805562320, guid: 84b2011854381854b9c9c222f8143b4e,
+        type: 2}
+      GamePrefab: {fileID: 172082, guid: 074728566132335428608c1b7e7f1f14, type: 2}
+  - name: Lamps
+    set:
+    - name: LampHanging
+      count: 1
+      SetupPrefab: {fileID: 1019335362325900, guid: e45fd2431e82d0642b6ed07ad3c7f44d,
+        type: 2}
+      GamePrefab: {fileID: 1222535055020162, guid: 5eb1e551edaeae145ad312a1b10f1354,
+        type: 2}
+    - name: LampHold
+      count: 1
+      SetupPrefab: {fileID: 1904158538052768, guid: 4d30d3fdc3730494f84a1620229b0089,
+        type: 2}
+      GamePrefab: {fileID: 1287269502756610, guid: 994f4deef406afb4b87ac03d8ee898b5,
+        type: 2}
+    - name: LampWall
+      count: 1
+      SetupPrefab: {fileID: 1611998745070814, guid: b6ad09d0aa9368b419720fbc0d63026e,
+        type: 2}
+      GamePrefab: {fileID: 1179022302592996, guid: fa4fad488b8efef4c98ca9f6118e87ea,
+        type: 2}
+  - name: Vase
+    set:
+    - name: Vase
+      count: 1
+      SetupPrefab: {fileID: 1312143026232164, guid: 510a5bdccb93eef42b54178e2913700e,
+        type: 2}
+      GamePrefab: {fileID: 1675188792071062, guid: b57472a07cee4e14a82e07f6d822d4ac,
+        type: 2}
+  - name: Radio
+    set:
+    - name: Radio
+      count: 1
+      SetupPrefab: {fileID: 1646841721498332, guid: 68968249b815ad143afc7b51b8ff10e7,
+        type: 2}
+      GamePrefab: {fileID: 1732341156592084, guid: 845982000ca533942a7db950334df473,
+        type: 2}
+  - name: Spider
+    set:
+    - name: Spider
+      count: 4
+      SetupPrefab: {fileID: 1074630165585200, guid: b8db271a2e5ea9a47bae81b6f276e63c,
+        type: 2}
+      GamePrefab: {fileID: 1236306540844532, guid: 66b1a423df78d714fb78b4562e34696c,
+        type: 2}
+  - name: CatStartRange
+    set:
+    - name: CatStartRange
+      count: 1
+      SetupPrefab: {fileID: 1780578058606542, guid: f28b58e61ec20c54195447919573fcd8,
+        type: 2}
+      GamePrefab: {fileID: 1852876139812612, guid: 23a4d9f48974c9941b7a6d372bc539a5,
+        type: 2}
+--- !u!114 &114168423943855434
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1341489106333714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a19651311fd2b8b4d8e5a01339c35fb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabVFX: {fileID: 1339875865069066, guid: faab3db31ea74d343838eb6bf9f8d502, type: 2}
+--- !u!114 &114301514100259080
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1341489106333714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83a321396f0ba61438d50a5459653f90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  setupRoomEvent: {fileID: 0}
+  setupGameEvent: {fileID: 0}
+--- !u!114 &114317869239322190
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1341489106333714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff9bbb6870ef53c44b377196ad2eb248, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whiteGhostPrefab: {fileID: 1707794066986174, guid: 38b61f497de5ca248a8ad7df4e811a59,
+    type: 2}
+  spiderPrefab: {fileID: 1037962360427116, guid: 78ed1808134f9934281d8583022d7410,
+    type: 2}
+  batPrefab: {fileID: 1521156689352766, guid: 97066d70a09e54148b801391df1a7be0, type: 2}
+  whiteGhostPositions: []
+  batPositions: []
+  spiderPositions: []
+  whiteGhostList: []
+  BlastWaveVFX: {fileID: 1953038230743154, guid: beb820dcd8129d54bbbea4024cf3c436,
+    type: 2}
+--- !u!114 &114465832040753532
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1341489106333714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68e1c104af3abd940878b5047d789e68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPointGameObj: []
+  _keywordManager: {fileID: 114765405382779896}
+  Spell: {fileID: 0}
+  _secBetweenSpells: 2
+  _killNothingThreshold: 0
+  _spellCount: 10
+  _spellStartIndex: 2
+  _keywords: []
+--- !u!114 &114765405382779896
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1341489106333714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f2795b3e072e1745a4f8c670d64284f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RecognizerStart: 0
+  KeywordsAndResponses:
+  - Keyword: Setup
+    KeyCode: 9
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 114301514100259080}
+          m_MethodName: SetupMode
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+  - Keyword: Finish
+    KeyCode: 13
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_MethodName: Finish
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+  - Keyword: Pass
+    KeyCode: 48
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 114465832040753532}
+          m_MethodName: UpdateSpell
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+  - Keyword: Snowball
+    KeyCode: 49
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 114465832040753532}
+          m_MethodName: UpdateSpell
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+  - Keyword: Gus
+    KeyCode: 50
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 114465832040753532}
+          m_MethodName: UpdateSpell
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+  - Keyword: Jasmine
+    KeyCode: 51
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 114465832040753532}
+          m_MethodName: UpdateSpell
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 3
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+  - Keyword: Demeter
+    KeyCode: 52
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 114465832040753532}
+          m_MethodName: UpdateSpell
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 4
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+  - Keyword: Griddlebone
+    KeyCode: 53
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 114465832040753532}
+          m_MethodName: UpdateSpell
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 5
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+  - Keyword: Macavity
+    KeyCode: 54
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 114465832040753532}
+          m_MethodName: UpdateSpell
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 6
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+  - Keyword: Augustus
+    KeyCode: 55
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 114465832040753532}
+          m_MethodName: UpdateSpell
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 7
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+  - Keyword: Serenity
+    KeyCode: 56
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 114465832040753532}
+          m_MethodName: UpdateSpell
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 8
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+  - Keyword: Cassandra
+    KeyCode: 57
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 114465832040753532}
+          m_MethodName: UpdateSpell
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 9
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+  - Keyword: Start
+    KeyCode: 115
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_MethodName: Begin
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 9
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+--- !u!114 &114879481113390908
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1341489106333714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 710c1e682d24978438bec75a10dd4da6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _agentAudioSource: {fileID: 0}
+  clipSFXGhostInit: {fileID: 8300000, guid: 9ec5cec8d04bbda489746206b52de7bc, type: 3}
+  clipSFXGhostAppear: {fileID: 8300000, guid: 112c60bd670874e479699fa8937a46a4, type: 3}
+  clipSFXGhostAttack:
+  - {fileID: 8300000, guid: a49001dd51b4a440180b20c07d1b71cf, type: 3}
+  - {fileID: 8300000, guid: 902275b6949204f4e826aef12c02c085, type: 3}
+  - {fileID: 8300000, guid: f45cbcaaf19f949349f789c0326c5678, type: 3}
+  clipSFXGhostDie: {fileID: 8300000, guid: 80922712de07211458eeb6af646a53c5, type: 3}
+  clipSFXGhostFly: {fileID: 0}
+  clipSFXSpellReveal: {fileID: 8300000, guid: 7d2bbea9abd958e4398f0ffd1870a9d2, type: 3}
+  clipSFXSpellBurning: {fileID: 0}
+  clipSFXSpellHide: {fileID: 0}
+  clipSFXBatsFlying: {fileID: 8300000, guid: cd8e5c00fd8617b4cb067fbf52ad80ab, type: 3}
+  clipSFXPlayerHurt: {fileID: 0}
+  clipVOMeow:
+  - {fileID: 8300000, guid: 9ec1a359dd2dc5c49afe2b89db80d9f7, type: 3}
+  - {fileID: 8300000, guid: e0b5daf91cbff8d47abb5e3c05da7b7b, type: 3}
+  - {fileID: 8300000, guid: 01b6f0b7a94090f42b31579392dc1d51, type: 3}
+  - {fileID: 8300000, guid: f51be9ca89715aa44bd4ed99e7f5a752, type: 3}
+  - {fileID: 8300000, guid: c89a9b821569b034e8de53f24be8627f, type: 3}
+  clipVOGreeting:
+  - {fileID: 8300000, guid: 3651018b694d797409014835ea89bdf5, type: 3}
+  - {fileID: 8300000, guid: 689a3a0474d002f408896105a10943fd, type: 3}
+  - {fileID: 8300000, guid: 74a0a983a5caf054bbea1cb8a864eb5c, type: 3}
+  - {fileID: 8300000, guid: 85903f75b2cdbbf43974c72b198838d6, type: 3}
+  clipVOComeCloser:
+  - {fileID: 8300000, guid: 002ae1223ed016c4b998086dc74c38d7, type: 3}
+  - {fileID: 8300000, guid: 75fdbd72d72e1754c807897ab3670e76, type: 3}
+  - {fileID: 8300000, guid: 18ebc00300028c147a8afdd6b004a475, type: 3}
+  - {fileID: 8300000, guid: 5664eaee43feebb48ab02bdc997d9800, type: 3}
+  clipVOSpeech:
+  - {fileID: 8300000, guid: 9334449e25b1915408141cf4c1a874f7, type: 3}
+  - {fileID: 8300000, guid: ee60bbaa321f51f4a9e4743c73019203, type: 3}
+  - {fileID: 8300000, guid: f54924e5deb9c494ca48e5676d26247c, type: 3}
+  - {fileID: 8300000, guid: 6420aa266681a25409ee627d8f80a563, type: 3}
+  clipVOItsThere: {fileID: 8300000, guid: 5cf06c516936538438d8916315713499, type: 3}
+  clipVOBehindYou: {fileID: 8300000, guid: 8eecb8355d312b3488bd808ae8eb8964, type: 3}
+  clipVOOnYourLeft: {fileID: 8300000, guid: bc22b1e638922a94fb95c05e9dbe54ba, type: 3}
+  clipVOOnYourRight: {fileID: 8300000, guid: fdd9cb81e48a58f4883ae9f5fe8e9c58, type: 3}
+  clipVOStareAtIt: {fileID: 8300000, guid: 67db709e31ddb0c4ea201e800ec52e6d, type: 3}
+  clipVOSeeYouCanStopIt: {fileID: 8300000, guid: f72efae71be53f0418f7e012737acfcb,
+    type: 3}
+  clipVOSpellCastTheSpell: {fileID: 8300000, guid: 4d763f171aa0ce442aabd1856dc65c62,
+    type: 3}
+  clipVOOnTheWall: {fileID: 8300000, guid: 43e8f431f25ea3542845fcb92b3b0422, type: 3}
+  clipVOShoutItToTheGhost: {fileID: 8300000, guid: 64f6c0d20a1cd854c8ab7c753dac3cc1,
+    type: 3}
+  clipVOBeBrave: {fileID: 8300000, guid: 52209a6999adcf24295a80389e49c30c, type: 3}
+  clipVORelax: {fileID: 0}
+  clipVOOhNoMoreOfThem: {fileID: 8300000, guid: 0c09eb64048f4fb418345eb71b32a8f7,
+    type: 3}
+  clipVOWave12CutScene: {fileID: 8300000, guid: 277f7241fe5dc89489c90068a2babda0,
+    type: 3}
+  clipVOWave23CutScene: {fileID: 8300000, guid: 7631d262916972d459e6eaad5dc14cbb,
+    type: 3}
+  clipsVOEndCutScene:
+  - {fileID: 8300000, guid: 1bedcc1c42c27724cbb814686fc57027, type: 3}
+  - {fileID: 8300000, guid: afad975872b7e6447bd28e5ea630d0b3, type: 3}
+  clipVOGhostActiveHint: {fileID: 0}
+  clipVOGhostCloseLeftHint: {fileID: 8300000, guid: bc22b1e638922a94fb95c05e9dbe54ba,
+    type: 3}
+  clipVOGhostCloseRightHint: {fileID: 8300000, guid: fdd9cb81e48a58f4883ae9f5fe8e9c58,
+    type: 3}
+  clipVOGhostCloseBackHint: {fileID: 8300000, guid: 8eecb8355d312b3488bd808ae8eb8964,
+    type: 3}
+  clipVOSpellKillNothingHint: {fileID: 8300000, guid: 12ec143944fbbe4478a91263cd07589c,
+    type: 3}
+  clipVOSpellToBatSpiderHint: {fileID: 8300000, guid: be73dda0abf2ccf4f8ac7464a179496f,
+    type: 3}
+  clipVOSpellOutdatedHint: {fileID: 8300000, guid: 553247282ef137d4ea2201122d84dde8,
+    type: 3}
